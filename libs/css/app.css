@@ -3629,19 +3629,32 @@ table ul {
 .biz-ex-diagram-update-panel {
   overflow-y: auto;
 }
-
 /* line 304, ../../sass/_export.scss */
-.biz-ex-logo-img {
+.biz-ex-logo-img-Footer {
   display: block;
-  width: 166px;
-  height: 55px;
+  width: 246px;
+  height: 127px;
   margin: 0 auto;
-  background: url("../img/biz-ex-logo.png") no-repeat;
+  background: url("../img/sep.png") no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* line 304, ../../sass/_export.scss */
   .biz-ex-logo-img {
-    background: url("../img/biz-ex-logo-2x.png") no-repeat;
+    background: url("../img/sep.png") no-repeat;
+  }
+}
+/* line 304, ../../sass/_export.scss */
+.biz-ex-logo-img {
+  display: block;
+  width: 246px;
+  height: 127px;
+  margin: 0 auto;
+  background: url("../img/itp.png") no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 304, ../../sass/_export.scss */
+  .biz-ex-logo-img {
+    background: url("../img/itp.png") no-repeat;
   }
 }
 

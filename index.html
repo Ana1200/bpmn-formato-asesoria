@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="./libs/css/app.css" type="text/css" />
     <script type="text/javascript" src="./libs/js/app/app.bizagi.min.js"></script>
     <link href="./libs/css/google-opensans.css" rel="stylesheet">
+    <style>
+        footer {
+          text-align: center;
+          padding: 3px;
+          background-color: DarkSalmon;
+          color: white;
+        }
+        </style>
 </head>
 
 <body class="off-canvas hide-extras">
@@ -24,6 +32,7 @@
  @date: Mar 14, 2022 5:03 PM 
 ***************************************************************************** /
  -->
+ 
 
     <div class="biz-ex-wrapper row"></div>
 
@@ -152,6 +161,7 @@
     {{/if}}
 </script>
 
+
 <script type="text/x-jquery-tmpl" id="CarouselSubPagesLI">
         <li class="biz-ex-carousel-columns">
             <a href="diagram/${id}" class="biz-ex-navigate biz-ex-navigate-carousel">
@@ -178,7 +188,7 @@
 			</ul>
 		</nav>
 		<div class="biz-gradien-scroll"></div>
-	</section>
+	</section> 
 	<div class="biz-ex-layout row">
 		<div class="large-3 columns biz-ex-navigation-left hide-for-small">
 			<div class="biz-ex-menu-toggle-container"></div>
@@ -981,10 +991,17 @@
     </div>
     <div class="large-9 columns biz-ex-top-nav">
         <div class="large-7 columns biz-ex-navigation-data">
-            <h1 class="biz-ex-title-process">
-                <a href="list/" class="biz-ex-navigate" title="${Bizagi.Util.getResource('home')}">${process}</a>
-            </h1>
             <h2 class="biz-ex-title-diagram" title="${name}">${name}</h2>
+            <h1 class="biz-ex-title-process">
+                <a href="list/" class="biz-ex-navigate" title="${Bizagi.Util.getResource('home')}">Proceso de asesoría dentro del Instituto Tecnológico de Pachuca.</a>
+            </h1>
+            <h1 class="biz-ex-title-process">
+                <a href="list/" class="biz-ex-navigate" title="${Bizagi.Util.getResource('home')}">Aquí encontraras un proceso de negocio que ayudará a elección </a>
+            </h1>
+            <h1 class="biz-ex-title-process">
+                <a href="list/" class="biz-ex-navigate" title="${Bizagi.Util.getResource('home')}">idónea en los recursos y tiempo</a>
+            </h1>
+            
             {{if PublishWebAttributes.showPublishDate}}
             <p class="biz-ex-time"><time datetime="${publishDate}">${publishDate}</time></p>
             {{/if}}
@@ -1003,7 +1020,7 @@
                 </li>
                 {{if !Bizagi.AppModel.personalized}}
                 <li>
-                    <a href="http://www.bizagi.com/" target="_blank" class="biz-ex-bizagi">${Bizagi.Util.getResource('visitBizagi')}</a>
+                    <a href="http://www.itpachuca.edu.mx/index.php" target="_blank" class="biz-ex-bizagi">${Bizagi.Util.getResource('Visita nuestro ITP')}</a>
                 </li>
                 {{/if}}
             </ul>
@@ -1491,7 +1508,14 @@
         </div>
 </script>
 
+<script type="text/x-jquery-tmpl" id="AlertViewTmpl">
+    <div data-alert class="alert-box biz-ex-alert">
+        <p class="biz-ex-alert-content">{{html message}}</p>
+    </div>
+</script>
+
 <div id="lessParser" class="biz-ex-hide"> 
+
 
 /*******************************************************************************
     @theme: Export Process Viewer
@@ -1788,7 +1812,15 @@ h1, h2, h3, h4, h5, h6,
 
 @import "theme-client.css";
 
+
 </div>
+
 	<div id="image-renderer" style="position: absolute; width: 100000px; opacity: 0;"></div>
+    <!-- Footer -->
+    <footer>
+        <p>Author: Hege Refsnes<br>
+        <a href="mailto:hege@example.com">hege@example.com</a></p>
+      </footer>
+  <!-- Footer -->
 	</body>
 </html>
