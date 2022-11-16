@@ -1,16 +1,13 @@
-# Encabezado 1
-## Encabezado 2
-### Encabezado 3
-#### Encabezado 4
-##### Encabezado 5
-###### Encabezado 9
+# Simulacion de un proceso de negocio
 
-Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
-- Elemento 1
-- Elemento 2
-- Elemento 3
-Este es un ejemplo de texto que da entrada a una lista numerada:
-1. Elemento 1
-2. Elemento 2
-3. Elemento 3
-Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de una manera muy sencilla.
+###### Aquí encontraras un proceso de negocio que ayudará a elección idónea en los recursos y tiempo
+
+Este es un ejemplo de un diagrama BPMN referente al proceso interno del Instituto Tecnológico de Pachuca el cual consta de una asesoría.
+- El proceso  consta de 2 subprocesos.
+- Los recursos son:
+    -Los alumnos.
+    -El docente.
+- Existen ciertas condiciones que permitiran llegar o culminar con el proceso.
+
+            
+        
