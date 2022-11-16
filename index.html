@@ -4,15 +4,16 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
     <title>Publish Web</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="stylesheet" href="./libs/css/jquery/jquery.ui.css" type="text/css" />
-    <link rel="stylesheet" href="./libs/css/bizagi-font.css" type="text/css" />
-    <link rel="stylesheet" href="./libs/css/app.css" type="text/css" />
-    <script type="text/javascript" src="./libs/js/app/app.bizagi.min.js"></script>
-    <link href="./libs/css/google-opensans.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/css/jquery/jquery.ui.css" type="text/css" />
+    <link rel="stylesheet" href="libs/css/bizagi-font.css" type="text/css" />
+    <link rel="stylesheet" href="libs/css/app.css" type="text/css" />
+    <script type="text/javascript" src="libs/js/app/app.bizagi.min.js"></script>
+    <link href="libs/css/google-opensans.css" rel="stylesheet">
 </head>
 
 <body class="off-canvas hide-extras">
@@ -27,22 +28,19 @@
 ***************************************************************************** /
  -->
 
-    <!-- Footer -->
     <div class="biz-ex-wrapper row">
-       
-            <div class="footer fixed-bottom " style="background-color: rgba(255, 246, 246, 0.952);">
-                <div class="text-center p-3" >
-                    <img src="./libs/img/TECNM.jpeg" alt="" style="width: 10%;">
-                    <a>      company       </a>
-                    <a >
-                                name © 2022  
-                    </a>
-                    <a>       ANA KAREN CRUZ PACHECO        </a>
-                    <img src="./libs/img/GOB.png" alt="" style="width: 15%;">
-                    
-                  </div>
-            </div>
-        
+        <div class="footer fixed-bottom " style="background-color: rgba(255, 246, 246, 0.952);">
+            <div class="text-center p-3" >
+                <img src="./libs/img/TECNM.jpeg" alt="" style="width: 10%;">
+                <a>      company       </a>
+                <a >
+                            name © 2022  
+                </a>
+                <a>       ANA KAREN CRUZ PACHECO        </a>
+                <img src="./libs/img/GOB.png" alt="" style="width: 15%;">
+                
+              </div>
+        </div>
     </div>
 
     <div class="alert-box biz-ex-supported">
@@ -51,10 +49,10 @@
         <a href="http://www.mozilla.org/en-US/firefox/new/" title="Firefox" target="_blank"><span class="biz-ex-iconbrowser-firefox"></span></a>
         <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" title="IE 9+" target="_blank"><span class="biz-ex-iconbrowser-ie"></span></a>
     </div>
-    <script type="text/javascript" src="./libs/js/app/app.ie8detect.js"></script>
+    <script type="text/javascript" src="libs/js/app/app.ie8detect.js"></script>
 
-    <script src="./key.json.js"></script>
-    <script id="json" src="./libs/js/json/configuration.json.js"></script>
+    <script src="key.json.js"></script>
+    <script id="json" src="libs/js/json/configuration.json.js"></script>
 
     <script id="initialization">
         switch (window.location.protocol) {
@@ -78,7 +76,7 @@
         if (PublishWebAttributes.useTheme) {
             var lessScript = document.createElement('script');
             lessScript.id = 'responsive-polyfill';
-            lessScript.src = './libs/js/app/less-1.4.1.min.js';
+            lessScript.src = 'libs/js/app/less-1.4.1.min.js';
             document.write(lessScript.outerHTML);
         }
 
@@ -86,36 +84,36 @@
         if (IsIE8Browser()) {
             var polyfillEventListener = document.createElement('script');
             polyfillEventListener.id = 'eventListener-polyfill';
-            polyfillEventListener.src = './libs/js/app/ie8/addEventListener.min.js';
+            polyfillEventListener.src = 'libs/js/app/ie8/addEventListener.min.js';
             document.write(polyfillEventListener.outerHTML);
 
             var modifiedKineticJs = document.createElement('script');
             modifiedKineticJs.id = 'kinetic-ie8';
-            modifiedKineticJs.src = './libs/js/app/ie8/kinetic.min.js';
+            modifiedKineticJs.src = 'libs/js/app/ie8/kinetic.min.js';
             document.write(modifiedKineticJs.outerHTML);
 
             var jQueryScriptForIE8 = document.createElement('script');
             jQueryScriptForIE8.id = 'jquery-ie8';
-            jQueryScriptForIE8.src = './libs/js/app/ie8/jquery.min.js';
+            jQueryScriptForIE8.src = 'libs/js/app/ie8/jquery.min.js';
             document.write(jQueryScriptForIE8.outerHTML);
 
         } else {
 
             var jQueryScriptForModernBrowsers = document.createElement('script');
             jQueryScriptForModernBrowsers.id = 'jquery-modern-browsers';
-            jQueryScriptForModernBrowsers.src = './libs/js/app/jquery.min.js';
+            jQueryScriptForModernBrowsers.src = 'libs/js/app/jquery.min.js';
             document.write(jQueryScriptForModernBrowsers.outerHTML);
 
             var kineticJs = document.createElement('script');
             kineticJs.id = 'kinetic';
-            kineticJs.src = './libs/js/app/kinetic.min.js';
+            kineticJs.src = 'libs/js/app/kinetic.min.js';
             document.write(kineticJs.outerHTML);
         }
     </script>
 
-    <script src="./libs/js/app/process-viewer.libraries.min.js"></script>
-    <script src="./libs/js/app/process-viewer.plugins.min.js"></script>
-    <script src="./libs/js/app/process-viewer.min.js"></script>
+    <script src="libs/js/app/process-viewer.libraries.min.js"></script>
+    <script src="libs/js/app/process-viewer.plugins.min.js"></script>
+    <script src="libs/js/app/process-viewer.min.js"></script>
 
 
 <!-- 
@@ -170,7 +168,6 @@
     {{/if}}
 </script>
 
-
 <script type="text/x-jquery-tmpl" id="CarouselSubPagesLI">
         <li class="biz-ex-carousel-columns">
             <a href="diagram/${id}" class="biz-ex-navigate biz-ex-navigate-carousel">
@@ -197,7 +194,7 @@
 			</ul>
 		</nav>
 		<div class="biz-gradien-scroll"></div>
-	</section> 
+	</section>
 	<div class="biz-ex-layout row">
 		<div class="large-3 columns biz-ex-navigation-left hide-for-small">
 			<div class="biz-ex-menu-toggle-container"></div>
@@ -226,9 +223,9 @@
 	<div class='biz-ex-diagram-view'>
 		<div class="biz-ex-diagram-data">
 			<a class="button sidebar-button" id="sidebarButton" href="#sidebar">
-				<img src="./libs/img/bzg-panel-expand.svg" class="biz-ex-svg-icon biz-ex-svg-toggle biz-ex-menu-visible-toggle biz-ex-menu-toggle-show"
+				<img src="libs/img/bzg-panel-expand.svg" class="biz-ex-svg-icon biz-ex-svg-toggle biz-ex-menu-visible-toggle biz-ex-menu-toggle-show"
 					 alt="">
-				<img src="./libs/img/bzg-panel-contract.svg" class="biz-ex-svg-icon biz-ex-svg-toggle biz-ex-menu-visible-toggle biz-ex-menu-toggle-hide"
+				<img src="libs/img/bzg-panel-contract.svg" class="biz-ex-svg-icon biz-ex-svg-toggle biz-ex-menu-visible-toggle biz-ex-menu-toggle-hide"
 					 alt="">
 			</a>
 
@@ -258,7 +255,7 @@
 				</div>
 				<span class="biz-ex-dialog-process-title">
 					<a href="#dialog/element/${id}" class="biz-ex-more-info biz-ex-navigate" data-css="biz-ex-attributes">
-						<img src="./libs/img/bzg-summary.svg" class="biz-ex-svg-icon biz-ex-svg-summary"
+						<img src="libs/img/bzg-summary.svg" class="biz-ex-svg-icon biz-ex-svg-summary"
 							 alt="">
 					</a>
 				</span>
@@ -992,7 +989,7 @@
 <script type="text/x-jquery-tmpl" id="HeaderViewTmpl">
     <div class="large-3 columns biz-ex-logo">
         <a class="button sidebar-button show-for-small" id="toggleMenuButton" href="#sidebar">
-            <img src="./libs/img/biz-ex-icon-menu.png" />
+            <img src="libs/img/biz-ex-icon-menu.png" />
         </a>
         <a href="list/" class="biz-ex-navigate biz-ex-logo-navigate">
             <i class="biz-ex-logo-img"></i>
@@ -1010,7 +1007,6 @@
             <h1 class="biz-ex-title-process">
                 <a href="list/" class="biz-ex-navigate" title="${Bizagi.Util.getResource('home')}">idónea en los recursos y tiempo</a>
             </h1>
-            
             {{if PublishWebAttributes.showPublishDate}}
             <p class="biz-ex-time"><time datetime="${publishDate}">${publishDate}</time></p>
             {{/if}}
@@ -1029,7 +1025,7 @@
                 </li>
                 {{if !Bizagi.AppModel.personalized}}
                 <li>
-                    <a href="http://www.itpachuca.edu.mx/index.php" target="_blank" class="biz-ex-bizagi">${Bizagi.Util.getResource('Visita nuestro ITP')}</a>
+                    <a href="http://www.itpachuca.edu.mx/index.php" target="_blank" class="biz-ex-bizagi">${Bizagi.Util.getResource('Visita nuestro sitio web TECNM Campus Pachuca')}</a>
                 </li>
                 {{/if}}
             </ul>
@@ -1054,10 +1050,10 @@
             {{each hierarchyTree.categories}}
             {{if diagrams.length > 0 || categories.length > 0}}
             <li class="biz-ex-hierarchy-root">
-                <img src="./libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams"
+                <img src="libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams"
                      alt="">
                 <a class="truncate-text biz-ex-name biz-ex-menu biz-ex-folder-menu">
-                    <img src="./libs/img/bzg-folder.svg" class="biz-ex-svg-icon biz-ex-svg-folder" alt="folder">
+                    <img src="libs/img/bzg-folder.svg" class="biz-ex-svg-icon biz-ex-svg-folder" alt="folder">
                     ${$value.name}
                 </a>
                 {{html
@@ -1082,10 +1078,10 @@
         {{each diagrams}}
         <li class="biz-ex-hierarchy-diagram">
             {{if diagrams.length > 0}}
-            <img src="./libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams biz-ex-svg-toggle" alt="">
+            <img src="libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams biz-ex-svg-toggle" alt="">
             {{/if}}
             <a href="diagram/${id}" class="biz-ex-navigate biz-ex-diagram-link" title="${name}">
-                <img src="./libs/img/bzg-diagram.svg" class="biz-ex-svg-icon biz-ex-svg-diagram" alt="folder">
+                <img src="libs/img/bzg-diagram.svg" class="biz-ex-svg-icon biz-ex-svg-diagram" alt="folder">
                 ${$value.name}
             </a>
             {{html
@@ -1104,9 +1100,9 @@
         {{each categories}}
         {{if diagrams.length > 0 || categories.length > 0}}
         <li class="biz-ex-hierarchy-subfolder">
-            <img src="./libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams biz-ex-svg-toggle" alt="">
+            <img src="libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams biz-ex-svg-toggle" alt="">
             <a class="truncate-text biz-ex-name biz-ex-menu biz-ex-folder-menu">
-                <img src="./libs/img/bzg-folder.svg" class="biz-ex-svg-icon biz-ex-svg-folder" alt="folder">
+                <img src="libs/img/bzg-folder.svg" class="biz-ex-svg-icon biz-ex-svg-folder" alt="folder">
                 ${$value.name}
             </a>
             {{html
@@ -1517,14 +1513,7 @@
         </div>
 </script>
 
-<script type="text/x-jquery-tmpl" id="AlertViewTmpl">
-    <div data-alert class="alert-box biz-ex-alert">
-        <p class="biz-ex-alert-content">{{html message}}</p>
-    </div>
-</script>
-
 <div id="lessParser" class="biz-ex-hide"> 
-
 
 /*******************************************************************************
     @theme: Export Process Viewer
@@ -1819,14 +1808,9 @@ h1, h2, h3, h4, h5, h6,
 
 
 
-
-
 @import "theme-client.css";
 
-
 </div>
-
 	<div id="image-renderer" style="position: absolute; width: 100000px; opacity: 0;"></div>
-
 	</body>
 </html>
